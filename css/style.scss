@@ -1,0 +1,26 @@
+:root {
+  --white: #FFF;
+  --off-white: #F5F5F5 ;
+  --grey: #EDEDED ;
+  --text: #A1A1A1;
+  --text-dark: #999;
+}
+
+@mixin reset {
+  margin: 0; padding: 0;
+}
+
+@mixin fonts {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  @include reset;
+  @include fonts; font-size: 100%; font-weight: 400;
+  background-color: var(--white); color: var(--text);
+}
+
+@import 'header';
+
+
+@import 'footer';
