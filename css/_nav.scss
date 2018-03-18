@@ -1,0 +1,22 @@
+.nav--primary {
+  position: relative;
+}
+.nav--hamburger {
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+}
+.nav--hamburger--bar {
+  margin-bottom: 3px;
+  display: block;
+  width: 24px; height: 4px;
+  background-color: var(--text);
+  border-radius: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.nav--primary--list {
+  @include reset;
+  list-style-type: none;
+}
