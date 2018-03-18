@@ -17,6 +17,18 @@
   }
 }
 .nav--primary--list {
-  @include reset;
+  margin: 3rem 0 0 0; padding: 2rem 1rem;
+  position: absolute; right: 0;
   list-style-type: none;
+  background-color: var(--white);
+  border-top: 2px solid var(--grey);
+}
+.nav--primary--list--element {
+
+}
+.nav--primary--list--link {
+  padding: 1rem;
+  display: block;
+  color: var(--blue); font-size: .9rem; font-weight: 600;
+  text-transform: uppercase;
 }
