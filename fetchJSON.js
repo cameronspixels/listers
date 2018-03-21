@@ -6,3 +6,10 @@ function createDropdownOptions() {
     
   ));
 };
+
+// Fetch JSON.
+// Each ID is an item.
+
+// Show Manufacturer > Name into dropdown menu.
+// Show Model > Name into next dropdown menu.
+// Filter Page content 

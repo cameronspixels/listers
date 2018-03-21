@@ -5,13 +5,18 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<header class="header--primary" id="openNav">
+		<header id="openNav" class="header--primary">
 			<nav class="nav--primary">
-				<div class="nav--hamburger">
-					<span class="nav--hamburger--bar hamburger--bar--1"></span>
-					<span class="nav--hamburger--bar hamburger--bar--2"></span>
-					<span class="nav--hamburger--bar hamburger--bar--3"></span>
-				</div>
+					<a href="#openNav" class="nav--hamburger hamburger--open" title="Open menu.">
+						<span class="nav--hamburger--bar hamburger--bar--1"></span>
+						<span class="nav--hamburger--bar hamburger--bar--2"></span>
+						<span class="nav--hamburger--bar hamburger--bar--3"></span>
+					</a>
+					<a href="#" class="nav--hamburger hamburger--closed" title="Close menu.">
+						<span class="nav--hamburger--bar hamburger--bar--1"></span>
+						<span class="nav--hamburger--bar hamburger--bar--2"></span>
+						<span class="nav--hamburger--bar hamburger--bar--3"></span>
+					</a>
 				<ul class="nav--primary--list">
 					<li class="nav--primary--list--element"><a class="nav--primary--list--link">New Cars &amp; Vans</a></li>
 					<li class="nav--primary--list--element"><a class="nav--primary--list--link">Used Cars &amp; Vans</a></li>
@@ -21,16 +26,48 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
+		<main class="main--primary">
 			<div class="main--wrapper">
-				<select class="vehicle--dropdown" id="vehicleDropdown">
-					<option value="none" selected="Selected">Balls</option>
-				</select>
-				<img class="main--make--logo" alt="" src="">
-				<h2 class="main--make--name">Toyota</h2>
-				<p class="main--name--info" id="make--name">Corola</p>
-				<p class="main--make--info" id="make--doors">3 door</p>
-				<p class="main--make--desc" id="make--desc">Anim adipisicing incididunt magna exercitation est consequat incididunt velit pariatur velit proident ullamco labore. Est excepteur exercitation officia minim qui incididunt aute. Ullamco duis dolor do do.</p>
+				<img class="make--logo" src="https://listers.co.uk/img/brands/toyota" alt="Totoya Logo">
+				<h2 class="make--name">Toyota</h2>
+				<p class="make--model" id="make--model">Dyna LWB Diesel</p>
+				<p class="model--detail">3 Seats, RWD.</p>
+				<p class="model--desc" id="model--desc">Anim adipisicing incididunt magna exercitation est consequat incididunt velit pariatur velit proident ullamco labore. Est excepteur exercitation officia minim qui incididunt aute. Ullamco duis dolor do do.</p>
+				<img class="carousel--image" src="https://listers.co.uk/img/a/l/24456/van" alt="">
+				<img class="carousel--small carousel--1" src="https://listers.co.uk/img/a/s/24456/van" alt="">
+				<img class="carousel--small carousel--2" src="https://listers.co.uk/img/a/s/24456/van" alt="">
+				<img class="carousel--small carousel--3" src="https://listers.co.uk/img/a/s/24456/van" alt="">
+				<img class="carousel--small carousel--4" src="https://listers.co.uk/img/a/s/24456/van" alt="">
+				<h3 class="section--heading">Rental Detail</h3>
+				<p class="section--text section--text--1">Advance payment of <span class="right--align dark--text">£2,899</span></p>
+				<p class="section--text section--text--2">Mileage Allowance <span class="right--align dark--text">60,000*</span></p>
+				<p class="section--text section--text--1">Road Tax <span class="right--align dark--text">Included</span></p>
+				<p class="section--text section--text--2">Full Breakdown Assistance <span class="right--align dark--text">Included</span></p>
+				<p class="section--text section--text--1">Insurance <span class="right--align dark--text">Included</span></p>
+				<p class="section--text section--text--2">Service and Maintenance <span class="right--align dark--text">Included</span></p>
+				<p class="section--text section--text--1">Tyre Replacement <span class="right--align dark--text">Included</span></p>
+				<p class="section--text section--text--2">Windscreen Replacement <span class="right--align dark--text">Included</span></p>
+
+
+
+
+				<h3 class="section--heading">Your Details</h3>
+				<form class="section--form">
+					<label class="form--label" for="name">Full Name</label>
+					<input class="form--input" id="name" type="text">
+					<br>
+					<label class="form--label" for="tel">Telephone</label>
+					<input class="form--input" id="tel" type="tel">
+					<br>
+					<label class="form--label" for="email">Email Address</label>
+					<input class="form--input" id="email" type="email">
+					<br>
+					<label class="form--label" for="building">Building No/Name</label>
+					<input class="form--input" id="building" type="text">
+				</form>
+			</div>
+			<div class="main--wrapper dark--background">
+
 			</div>
 
 

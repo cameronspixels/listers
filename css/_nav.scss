@@ -17,18 +17,50 @@
   }
 }
 .nav--primary--list {
-  margin: 3rem 0 0 0; padding: 2rem 1rem;
-  position: absolute; right: 0;
+  margin: 3rem 0 0 0; padding: 2rem 0; overflow: none;
+  width: 240px; height: calc(100vh - 7rem);
+  position: fixed;
+  right: 0;
   list-style-type: none;
   background-color: var(--white);
   border-top: 2px solid var(--grey);
+  background-color: var(--off-white);
+  transform: translateX(240px);
+  transition: transform 330ms ease-in-out;
 }
 .nav--primary--list--element {
-
+  width: 100%;
 }
 .nav--primary--list--link {
   padding: 1rem;
   display: block;
   color: var(--blue); font-size: .9rem; font-weight: 600;
   text-transform: uppercase;
+  text-indent: 1rem;
+}
+
+.hamburger--open {
+  display: block;
+}
+
+.hamburger--closed {
+  display: none;
+  .nav--hamburger--bar {
+    background-color: var(--text-dark);
+  }
+}
+
+#openNav {
+  &:target{
+    .hamburger--open {
+      display: none;
+    }
+    .hamburger--closed {
+      display: block;
+    }
+    .nav--primary--list {
+      transform: none;
+      transition: transform 330ms ease-in-out;
+    }
+  }
 }
